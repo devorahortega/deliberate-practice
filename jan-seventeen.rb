@@ -70,4 +70,19 @@
 
 # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
+# puts "Please enter a number:"
+# num1 = gets.chomp
+
+# puts "Please enter another number:"
+# num2 = gets.chomp
+
+# p num1.to_i * num2.to_i
+
 # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
+
+# puts "Please enter a word:"
+# word = gets.chomp
+
+# if word.length > 5
+#   puts "That's a long word"
+# end
