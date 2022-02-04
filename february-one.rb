@@ -1,33 +1,52 @@
 # 1. Start with an array of numbers and compute the sum of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 26.
-array = [5, 10, 8, 3]
-sum = 0
+# array = [5, 10, 8, 3]
+# sum = 0
 
-array.each do |num|
-  sum += num
-end
+# array.each do |num|
+#   sum += num
+# end
 
-p sum
+# p sum
 
 #  2. Start with an array of strings and combine them all into a single string.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
-array = ["volleyball", "basketball", "badminton"]
-word = ""
+# array = ["volleyball", "basketball", "badminton"]
+# word = ""
 
-array.each do |this|
-  word += this
-end
+# array.each do |this|
+#   word += this
+# end
 
-p word
+# p word
 
 #  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
 
 #  4. Start with an array of numbers and compute the the minumum number.
 #     For example, [5, 10, 8, 3, 9] becomes 3.
+# array = [5, 10, 8, 3, 9]
+# min = 10
+
+# array.each do |num|
+#   if num < min
+#     min = num
+#   end
+# end
+
+# p min
+# works but is also hard coded in so it techically doesnt
 
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
+array = ["volleyball", "basketball", "badminton"]
+sum = 0
+
+array.each do |word|
+  sum = word.length
+end
+
+p sum
 
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
