@@ -36,19 +36,11 @@ array = ["a", "b", "c", "d"]
 array2 = []
 index = 0
 
-array.each do |a|
-  while index < array.length
-    array2 << a + array[index]
-    index += 1
-  end
-end
-
-p array2
-
-# this needs to be fixed so it continues the pattern
-
 #  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 #     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+array = [5, -2, 1, -9, -7, 2, 6]
+product = 0
+index = 0
 
 #  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
