@@ -73,7 +73,34 @@ end
 num = 99
 
 if num == 100
+  p 100
+elsif num == 99
+  p 99
+else
+  p 0
+end
 
 # 9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise.
+num1 = 5
+num2 = 80
+
+if num1 < 0 && num2 > 0
+  p 1
+else
+  p 0
+end
 
 # 10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
+num = 6
+
+if num > 80
+  p 5
+elsif num > 60
+  p 4
+elsif num > 40
+  p 3
+elsif num > 20
+  p 2
+else
+  p 1
+end
