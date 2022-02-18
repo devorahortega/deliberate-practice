@@ -60,8 +60,19 @@ end
 p stringefy (5)
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
-# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+def fivey(word)
+  return word * 5
+end
+
+p fivey("dog")
 
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+def math(num)
+  sum = num * 10 + 30
+  return sum
+end
+
+p math(10)
 
 # SOLUTIONS: https://gist.github.com/peterxjang/6a26d3c698c651dd6e9ccb168d32648c
