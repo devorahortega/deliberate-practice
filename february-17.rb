@@ -3,29 +3,58 @@
 array = [2, 32, 80, 18, 12, 3]
 array2 = []
 
+array.each do |num|
+  if num < 20
+    array2 << num
+  end
+end
+
+p array2
+
 #  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
 #     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
-array = ["winner", "winner", "chicken", "dinner"] 
+array = ["winner", "winner", "chicken", "dinner"]
 array2 = []
 
+array.each do |word|
+  if word[0] == "w"
+    array2 << word
+  end
+end
+
+p array2
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
-array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}]
+array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
 array2 = []
 
+array.each do |product|
+  if product[:price] > 5
+    array2 << product
+  end
+end
+
+p array2
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
 array = [2, 4, 5, 1, 8, 9, 7]
 array2 = []
 
+array.each do |num|
+  if num / 2
+    array2 << num
+  end
+end
+
+p array2
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
-array = ["a", "man", "a", "plan", "a", "canal", "panama"] 
+array = ["a", "man", "a", "plan", "a", "canal", "panama"]
 array2 = []
 
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
-array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
 array2 = []
 
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
@@ -40,12 +69,12 @@ array2 = []
 
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
-array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}]
+array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
 array2 = []
 
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
-array = [2, 4, 5, 1, 8, 9, 7] 
+array = [2, 4, 5, 1, 8, 9, 7]
 array2 = []
 
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/7de16ed43ea506e98df3fa15074b84f8
