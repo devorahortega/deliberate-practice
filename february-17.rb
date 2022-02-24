@@ -52,20 +52,51 @@ p array2
 array = ["a", "man", "a", "plan", "a", "canal", "panama"]
 array2 = []
 
+array.each do |word|
+  if word.length < 4
+    array2 << word
+  end
+end
+
+p array2
+
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 array = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
 array2 = []
+
+array.each do |thing|
+  if thing[:name].length < 6
+    array2 << thing
+  end
+end
+
+p array2
 
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
 array = [8, 23, 0, 44, 1980, 3]
 array2 = []
 
+array.each do |num|
+  if num < 10
+    array2 << num
+  end
+end
+
+p array2
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
 array = ["big", "little", "good", "bad"]
 array2 = []
+
+array.each do |word|
+  if word[0] != "b"
+    array2 << word
+  end
+end
+
+p array2
 
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
