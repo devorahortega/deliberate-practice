@@ -1,11 +1,35 @@
 #  1. Start with an array of numbers and create a new array with each number times 3.
 #     For example, [1, 2, 3] becomes [3, 6, 9].
+array = [1, 2, 3]
+array2 = []
+
+array.each do |num|
+  array2 << num * 3
+end
+
+p array2
 
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+array = ["hello", "goodbye"]
+array2 = []
+
+array.each do |word|
+  array2 << word.upcase
+end
+
+p array2
 
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+array = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
+array2 = []
+
+array.each do |word|
+  array2 << word[:name]
+end
+
+p array2
 
 #  4. Start with an array of numbers and create a new array with each number plus 7.
 #     For example, [1, 2, 3] becomes [8, 9, 10].
