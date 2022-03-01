@@ -33,21 +33,62 @@ p array2
 
 #  4. Start with an array of numbers and create a new array with each number plus 7.
 #     For example, [1, 2, 3] becomes [8, 9, 10].
+array = [1, 2, 3]
+array2 = []
+
+array.each do |num|
+  array2 << num + 7
+end
+
+p array2
 
 #  5. Start with an array of strings and create a new array with each string's length.
 #     For example, ["hello", "goodbye"] becomes [5, 7].
+array = ["hello", "goodbye"]
+array2 = []
 
+array.each do |word|
+  array2 << word.length
+end
+
+p array2
 #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+array = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
+array2 = []
 
+array.each do |thing|
+  array2 << thing[:age]
+end
+
+p array2
 #  7. Start with an array of numbers and create a new array with each number divided by 2.
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+array = [1, 2, 3]
+array2 = []
 
+array.each do |num|
+  array2 << num / 2
+end
+
+p array2
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #     For example, ["hello", "goodbye"] becomes ["h", "g"].
+array = ["hello", "goodbye"]
+array2 = []
 
+array.each do |word|
+  array2 << word[0]
+end
+
+p array2
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+array = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
+array2 = []
+
+array.each do |thing|
+end
 
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
