@@ -47,7 +47,17 @@ end
 p sringify(6)
 
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+def fived(num)
+  5.times do
+    p num
+  end
+end
 
-# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+p fived(5)
 
-# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+# 9. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+def maths(num)
+  return num * 10 + 30
+end
+
+p maths(10)
