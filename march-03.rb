@@ -1,4 +1,9 @@
 # 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+hash = { first_name: "jon", last_name: "green", email: "jongren@example.com" }
+
+hash.each do |thing|
+  p thing
+end
 
 # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
