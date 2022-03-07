@@ -48,22 +48,25 @@
 # p sentence
 
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
-puts "enter word"
-word = gets.chomp
+# puts "enter word"
+# word = gets.chomp
 
-# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
-puts "enter word"
-word = gets.chomp
-
-if word < 0
-  p "thats a negative number"
-end
+# p word.length
 
 # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
-2.times do
-  puts "enter a number"
-  num = gets.chomp
-  p num * num
-end
+# puts "enter number"
+# num1 = gets.chomp
+# puts "enter number"
+# num2 = gets.chomp
+
+# sum = num1.to_i * num2.to_i
+
+# p sum
 
 # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
+# puts "enter word"
+# word = gets.chomp
+
+# if word.length > 5
+#   p "That's a long word."
+# end
