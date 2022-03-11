@@ -51,14 +51,14 @@
 # p array[1][:model]
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
-hash = { apple: "fruit", bagel: "bread" }
+# hash = { apple: "fruit", bagel: "bread" }
 
-hash[:cucumber] = "vegetable"
+# hash[:cucumber] = "vegetable"
 
-p hash
+# p hash
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
-hash = { brand: "nike", color: "red", size: "XXL" }
+# hash = { brand: "nike", color: "red", size: "XXL" }
 
-p hash[:brand]
-p hash[:color]
-p hash[:size]
+# p hash[:brand]
+# p hash[:color]
+# p hash[:size]
