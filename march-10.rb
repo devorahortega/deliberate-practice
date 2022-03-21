@@ -73,12 +73,47 @@
 
 #  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
 #     For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
+# array = ["do", "or", "do", "not"]
+# hash = {}
+# index = 0
+
+# while index < array.length
+#   array = array[index]
+#   if hash[array] == nil
+#     hash[array] = 0
+#   end
+#   hash[array] += 1
+#   index = index + 1
+# end
+
+# p hash
 
 #  7. Convert a hash into a flat array containing all the hash’s keys and values.
 #     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
+# hash = { "a" => 1, "b" => 2, "c" => 3, "d" => 4 }
+# array = []
+
+# hash.each do |key, value|
+#   array << key
+#   array << value
+# end
+
+# p array
 
 #  8. Combine data from a hash with names and prices and an array of hashes with names, colors, and weights to make a new hash.
 #     For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}] becomes {"chair" => {price: 75, color: "red", weight: 10}, "book" => {price: 15, color: "black", weight: 1}}.
+prices = {"chair" => 75, "book" => 15}
+items = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
+hash = {}
+index = 0
+
+while index < items.length
+  item = items[index]
+  name = items[:name]
+  color = items[:color]
+  weight = items[:weight]
+  price = prices[name]
+  hash[name] = {price: price, color: Color }
 
 #  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
 #     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
