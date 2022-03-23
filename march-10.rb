@@ -102,23 +102,46 @@
 
 #  8. Combine data from a hash with names and prices and an array of hashes with names, colors, and weights to make a new hash.
 #     For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}] becomes {"chair" => {price: 75, color: "red", weight: 10}, "book" => {price: 15, color: "black", weight: 1}}.
-prices = {"chair" => 75, "book" => 15}
-items = [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}]
-hash = {}
-index = 0
+# prices = { "chair" => 75, "book" => 15 }
+# items = [{ name: "chair", color: "red", weight: 10 }, { name: "book", color: "black", weight: 1 }]
+# hash = {}
+# index = 0
 
-while index < items.length
-  item = items[index]
-  name = items[:name]
-  color = items[:color]
-  weight = items[:weight]
-  price = prices[name]
-  hash[name] = {price: price, color: Color }
+# while index < items.length
+#   item = items[index]
+#   name = items[:name]
+#   color = items[:color]
+#   weight = items[:weight]
+#   price = prices[name]
+#   hash[name] = { price: price, color: color, weight: weight }
+#   index += 1
+# end
+
+# p hash
 
 #  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
 #     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
+# books = [{ author: "Jeff Smith", title: "Bone" }, { author: "George Orwell", title: "1984" }, { author: "Jeff Smith", title: "RASL" }]
+# hash = {}
+# index = 0
 
+# while index < books.length
+#   book = books[index]
+#   author = book[:author]
+#   title = book[:title]
+#   if hash[author] == nil
+#     hash[author] = []
+#   end
+#   hash[author] << title
+#   index += 1
+# end
+# p hash
 # 10. Given a hash, create a new hash that has the keys and values switched.
 #     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
-
+hash1 = { "a" => 1, "b" => 2, "c" => 3 }
+hash2 = {}
+hash1.each do |key, value|
+  hash2[value] = key
+end
+p hash2
 # SOLUTIONS: https://gist.github.com/peterxjang/216a7a6e8411ee5c05118e78022f2bc7
